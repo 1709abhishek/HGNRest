@@ -1,0 +1,402 @@
+{
+  "project": "HGNRest Test Improvement",
+  "description": "File-by-file test improvement plan to achieve 60% coverage",
+  "metadata": {
+    "totalFiles": 170,
+    "alreadyTested": 8,
+    "remaining": 162,
+    "estimatedHours": 450,
+    "targetCoverage": "60%",
+    "totalSprints": 8
+  },
+  "sprints": [
+    {
+      "name": "Sprint 1",
+      "goal": "Foundation - Services & Helpers",
+      "estimatedHours": 27,
+      "coverageTarget": "25%",
+      "taskCount": 9
+    },
+    {
+      "name": "Sprint 2",
+      "goal": "Core Controllers Part 1 - User, Permissions, Tasks",
+      "estimatedHours": 56,
+      "coverageTarget": "35%",
+      "taskCount": 15
+    },
+    {
+      "name": "Sprint 3",
+      "goal": "Core Controllers Part 2 - Projects, Teams, Routes",
+      "estimatedHours": 60,
+      "coverageTarget": "45%",
+      "taskCount": 27
+    },
+    {
+      "name": "Sprint 4",
+      "goal": "Secondary Controllers & Automation",
+      "estimatedHours": 60,
+      "coverageTarget": "52%",
+      "taskCount": 25
+    },
+    {
+      "name": "Sprint 5",
+      "goal": "Forms, Community, BM Dashboard Start",
+      "estimatedHours": 72,
+      "coverageTarget": "58%",
+      "taskCount": 24
+    },
+    {
+      "name": "Sprint 6",
+      "goal": "BM Dashboard Completion",
+      "estimatedHours": 47,
+      "coverageTarget": "62%",
+      "taskCount": 18
+    },
+    {
+      "name": "Sprint 7",
+      "goal": "LB Dashboard & Remaining BM",
+      "estimatedHours": 41,
+      "coverageTarget": "65%",
+      "taskCount": 17
+    },
+    {
+      "name": "Sprint 8",
+      "goal": "Cleanup & Remaining Items",
+      "estimatedHours": 45,
+      "coverageTarget": "68%+",
+      "taskCount": 27
+    }
+  ],
+  "tasks": [
+    {
+      "id": 1,
+      "title": "Write tests for userService.js",
+      "filePath": "src/services/userService.js",
+      "testFile": "src/services/__tests__/userService.spec.js",
+      "module": "User Management",
+      "category": "Service",
+      "priority": "P0-Critical",
+      "status": "Not Started",
+      "estimatedHours": 4,
+      "sprint": "Sprint 1",
+      "dependencies": [],
+      "labels": ["testing", "services", "critical"],
+      "acceptanceCriteria": [
+        "All exported functions have tests",
+        "Happy path scenarios covered",
+        "Error handling tested",
+        "60% coverage achieved"
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Write tests for permissionService.js",
+      "filePath": "src/services/permissionService.js",
+      "testFile": "src/services/__tests__/permissionService.spec.js",
+      "module": "Permissions",
+      "category": "Service",
+      "priority": "P0-Critical",
+      "status": "Not Started",
+      "estimatedHours": 4,
+      "sprint": "Sprint 1",
+      "dependencies": [],
+      "labels": ["testing", "services", "critical"],
+      "acceptanceCriteria": [
+        "All exported functions have tests",
+        "Permission check scenarios covered",
+        "Edge cases tested",
+        "60% coverage achieved"
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Write tests for notificationService.js",
+      "filePath": "src/services/notificationService.js",
+      "testFile": "src/services/__tests__/notificationService.spec.js",
+      "module": "Communication",
+      "category": "Service",
+      "priority": "P1-High",
+      "status": "Not Started",
+      "estimatedHours": 3,
+      "sprint": "Sprint 1",
+      "dependencies": [],
+      "labels": ["testing", "services", "high-priority"]
+    },
+    {
+      "id": 4,
+      "title": "Write tests for applicationsService.js",
+      "filePath": "src/services/applicationsService.js",
+      "testFile": "src/services/__tests__/applicationsService.spec.js",
+      "module": "Applications",
+      "category": "Service",
+      "priority": "P1-High",
+      "status": "Not Started",
+      "estimatedHours": 3,
+      "sprint": "Sprint 1",
+      "dependencies": [],
+      "labels": ["testing", "services", "high-priority"]
+    },
+    {
+      "id": 5,
+      "title": "Write tests for appAccessService.js",
+      "filePath": "src/services/automation/appAccessService.js",
+      "testFile": "src/services/automation/__tests__/appAccessService.spec.js",
+      "module": "Automation",
+      "category": "Service",
+      "priority": "P2-Medium",
+      "status": "Not Started",
+      "estimatedHours": 2,
+      "sprint": "Sprint 2",
+      "dependencies": [],
+      "labels": ["testing", "services", "automation"]
+    },
+    {
+      "id": 10,
+      "title": "Write tests for dashboardhelper.js",
+      "filePath": "src/helpers/dashboardhelper.js",
+      "testFile": "src/helpers/__tests__/dashboardhelper.spec.js",
+      "module": "Reporting",
+      "category": "Helper",
+      "priority": "P1-High",
+      "status": "Not Started",
+      "estimatedHours": 3,
+      "sprint": "Sprint 1",
+      "dependencies": [],
+      "labels": ["testing", "helpers", "high-priority"]
+    },
+    {
+      "id": 11,
+      "title": "Write tests for taskHelper.js",
+      "filePath": "src/helpers/taskHelper.js",
+      "testFile": "src/helpers/__tests__/taskHelper.spec.js",
+      "module": "Tasks",
+      "category": "Helper",
+      "priority": "P1-High",
+      "status": "Not Started",
+      "estimatedHours": 3,
+      "sprint": "Sprint 1",
+      "dependencies": [],
+      "labels": ["testing", "helpers", "high-priority"]
+    },
+    {
+      "id": 12,
+      "title": "Write tests for userHelper.js",
+      "filePath": "src/helpers/userHelper.js",
+      "testFile": "src/helpers/__tests__/userHelper.spec.js",
+      "module": "User Management",
+      "category": "Helper",
+      "priority": "P1-High",
+      "status": "Not Started",
+      "estimatedHours": 3,
+      "sprint": "Sprint 1",
+      "dependencies": [],
+      "labels": ["testing", "helpers", "high-priority"]
+    },
+    {
+      "id": 25,
+      "title": "Write tests for userProfileController.js",
+      "filePath": "src/controllers/userProfileController.js",
+      "testFile": "src/controllers/__tests__/userProfileController.spec.js",
+      "module": "User Management",
+      "category": "Controller",
+      "priority": "P0-Critical",
+      "status": "Not Started",
+      "estimatedHours": 6,
+      "sprint": "Sprint 2",
+      "dependencies": ["userService.js"],
+      "labels": ["testing", "controllers", "critical"]
+    },
+    {
+      "id": 26,
+      "title": "Write tests for logincontroller.js",
+      "filePath": "src/controllers/logincontroller.js",
+      "testFile": "src/controllers/__tests__/logincontroller.spec.js",
+      "module": "User Management",
+      "category": "Controller",
+      "priority": "P0-Critical",
+      "status": "Not Started",
+      "estimatedHours": 4,
+      "sprint": "Sprint 2",
+      "dependencies": [],
+      "labels": ["testing", "controllers", "critical", "auth"]
+    },
+    {
+      "id": 27,
+      "title": "Write tests for registrationController.js",
+      "filePath": "src/controllers/registrationController.js",
+      "testFile": "src/controllers/__tests__/registrationController.spec.js",
+      "module": "User Management",
+      "category": "Controller",
+      "priority": "P0-Critical",
+      "status": "Not Started",
+      "estimatedHours": 4,
+      "sprint": "Sprint 2",
+      "dependencies": [],
+      "labels": ["testing", "controllers", "critical", "auth"]
+    },
+    {
+      "id": 34,
+      "title": "Write tests for permissionController.js",
+      "filePath": "src/controllers/permissionController.js",
+      "testFile": "src/controllers/__tests__/permissionController.spec.js",
+      "module": "Permissions",
+      "category": "Controller",
+      "priority": "P0-Critical",
+      "status": "Not Started",
+      "estimatedHours": 5,
+      "sprint": "Sprint 2",
+      "dependencies": ["permissionService.js"],
+      "labels": ["testing", "controllers", "critical"]
+    },
+    {
+      "id": 35,
+      "title": "Write tests for rolesController.js",
+      "filePath": "src/controllers/rolesController.js",
+      "testFile": "src/controllers/__tests__/rolesController.spec.js",
+      "module": "Permissions",
+      "category": "Controller",
+      "priority": "P0-Critical",
+      "status": "Not Started",
+      "estimatedHours": 4,
+      "sprint": "Sprint 2",
+      "dependencies": [],
+      "labels": ["testing", "controllers", "critical"]
+    },
+    {
+      "id": 38,
+      "title": "Write tests for taskController.js",
+      "filePath": "src/controllers/taskController.js",
+      "testFile": "src/controllers/__tests__/taskController.spec.js",
+      "module": "Tasks",
+      "category": "Controller",
+      "priority": "P0-Critical",
+      "status": "Not Started",
+      "estimatedHours": 6,
+      "sprint": "Sprint 2",
+      "dependencies": ["taskHelper.js"],
+      "labels": ["testing", "controllers", "critical"]
+    },
+    {
+      "id": 44,
+      "title": "Write tests for timeEntryController.js",
+      "filePath": "src/controllers/timeEntryController.js",
+      "testFile": "src/controllers/__tests__/timeEntryController.spec.js",
+      "module": "Time Tracking",
+      "category": "Controller",
+      "priority": "P0-Critical",
+      "status": "Not Started",
+      "estimatedHours": 5,
+      "sprint": "Sprint 2",
+      "dependencies": [],
+      "labels": ["testing", "controllers", "critical"]
+    },
+    {
+      "id": 48,
+      "title": "Write tests for projectController.js",
+      "filePath": "src/controllers/projectController.js",
+      "testFile": "src/controllers/__tests__/projectController.spec.js",
+      "module": "Projects",
+      "category": "Controller",
+      "priority": "P0-Critical",
+      "status": "Not Started",
+      "estimatedHours": 5,
+      "sprint": "Sprint 3",
+      "dependencies": [],
+      "labels": ["testing", "controllers", "critical"]
+    },
+    {
+      "id": 52,
+      "title": "Write tests for teamController.js",
+      "filePath": "src/controllers/teamController.js",
+      "testFile": "src/controllers/__tests__/teamController.spec.js",
+      "module": "Team",
+      "category": "Controller",
+      "priority": "P0-Critical",
+      "status": "Not Started",
+      "estimatedHours": 5,
+      "sprint": "Sprint 3",
+      "dependencies": [],
+      "labels": ["testing", "controllers", "critical"]
+    },
+    {
+      "id": 101,
+      "title": "Write tests for bmProjectController.js",
+      "filePath": "src/controllers/bmdashboard/bmProjectController.js",
+      "testFile": "src/controllers/bmdashboard/__tests__/bmProjectController.spec.js",
+      "module": "BM Dashboard",
+      "category": "Controller",
+      "priority": "P1-High",
+      "status": "Not Started",
+      "estimatedHours": 4,
+      "sprint": "Sprint 5",
+      "dependencies": [],
+      "labels": ["testing", "controllers", "bm-dashboard"]
+    },
+    {
+      "id": 130,
+      "title": "Write tests for listingsController.js",
+      "filePath": "src/controllers/lbdashboard/listingsController.js",
+      "testFile": "src/controllers/lbdashboard/__tests__/listingsController.spec.js",
+      "module": "LB Dashboard",
+      "category": "Controller",
+      "priority": "P1-High",
+      "status": "Not Started",
+      "estimatedHours": 4,
+      "sprint": "Sprint 7",
+      "dependencies": [],
+      "labels": ["testing", "controllers", "lb-dashboard"]
+    }
+  ],
+  "labels": [
+    {"name": "testing", "color": "#0052CC"},
+    {"name": "services", "color": "#00875A"},
+    {"name": "helpers", "color": "#6554C0"},
+    {"name": "controllers", "color": "#FF5630"},
+    {"name": "routes", "color": "#FFAB00"},
+    {"name": "critical", "color": "#DE350B"},
+    {"name": "high-priority", "color": "#FF8B00"},
+    {"name": "bm-dashboard", "color": "#00B8D9"},
+    {"name": "lb-dashboard", "color": "#36B37E"},
+    {"name": "automation", "color": "#6554C0"},
+    {"name": "auth", "color": "#FF5630"}
+  ],
+  "customFields": {
+    "testFile": {
+      "name": "Test File Path",
+      "type": "text"
+    },
+    "filePath": {
+      "name": "Source File Path",
+      "type": "text"
+    },
+    "module": {
+      "name": "Module",
+      "type": "dropdown",
+      "options": [
+        "User Management",
+        "Permissions",
+        "Tasks",
+        "Time Tracking",
+        "Projects",
+        "Team",
+        "Communication",
+        "Forms",
+        "Community",
+        "Knowledge Base",
+        "Inventory",
+        "Financial",
+        "BM Dashboard",
+        "LB Dashboard",
+        "Automation",
+        "Analytics",
+        "Configuration",
+        "Core"
+      ]
+    },
+    "category": {
+      "name": "Category",
+      "type": "dropdown",
+      "options": ["Service", "Helper", "Controller", "Route", "Utility", "WebSocket", "CronJob", "Job"]
+    }
+  }
+}

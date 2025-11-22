@@ -1,0 +1,171 @@
+ID,File Path,Module,Category,Priority,Status,Has Test,Test File To Create,Estimated Hours,Dependencies,Sprint,Assignee,Notes
+1,src/services/userService.js,User Management,Service,P0-Critical,Not Started,No,src/services/__tests__/userService.spec.js,4,None,Sprint 1,,Core service used across all user operations
+2,src/services/permissionService.js,Permissions,Service,P0-Critical,Not Started,No,src/services/__tests__/permissionService.spec.js,4,None,Sprint 1,,Core service for all permission checks
+3,src/services/notificationService.js,Communication,Service,P1-High,Not Started,No,src/services/__tests__/notificationService.spec.js,3,None,Sprint 1,,Notification delivery service
+4,src/services/applicationsService.js,Applications,Service,P1-High,Not Started,No,src/services/__tests__/applicationsService.spec.js,3,None,Sprint 1,,Application processing logic
+5,src/services/automation/appAccessService.js,Automation,Service,P2-Medium,Not Started,No,src/services/automation/__tests__/appAccessService.spec.js,2,None,Sprint 2,,App access automation
+6,src/services/automation/dropboxService.js,Automation,Service,P2-Medium,Not Started,No,src/services/automation/__tests__/dropboxService.spec.js,2,None,Sprint 2,,Dropbox integration
+7,src/services/automation/githubService.js,Automation,Service,P2-Medium,Not Started,No,src/services/automation/__tests__/githubService.spec.js,2,None,Sprint 2,,GitHub integration
+8,src/services/automation/sentryService.js,Automation,Service,P2-Medium,Not Started,No,src/services/automation/__tests__/sentryService.spec.js,2,None,Sprint 2,,Sentry error tracking
+9,src/services/automation/slackService.js,Automation,Service,P2-Medium,Not Started,No,src/services/automation/__tests__/slackService.spec.js,2,None,Sprint 2,,Slack integration
+10,src/helpers/dashboardhelper.js,Reporting,Helper,P1-High,Not Started,No,src/helpers/__tests__/dashboardhelper.spec.js,3,None,Sprint 1,,Dashboard data aggregation
+11,src/helpers/taskHelper.js,Tasks,Helper,P1-High,Not Started,No,src/helpers/__tests__/taskHelper.spec.js,3,None,Sprint 1,,Task utility functions
+12,src/helpers/userHelper.js,User Management,Helper,P1-High,Not Started,No,src/helpers/__tests__/userHelper.spec.js,3,None,Sprint 1,,User utility functions
+13,src/helpers/reporthelper.js,Reporting,Helper,P2-Medium,Not Started,No,src/helpers/__tests__/reporthelper.spec.js,2,None,Sprint 2,,Report generation helpers
+14,src/helpers/notificationhelper.js,Communication,Helper,P2-Medium,Not Started,No,src/helpers/__tests__/notificationhelper.spec.js,2,None,Sprint 2,,Notification helpers
+15,src/helpers/taskNotificationHelper.js,Tasks,Helper,P2-Medium,Not Started,No,src/helpers/__tests__/taskNotificationHelper.spec.js,2,None,Sprint 2,,Task notification helpers
+16,src/helpers/imageHelper.js,Utilities,Helper,P3-Low,Not Started,No,src/helpers/__tests__/imageHelper.spec.js,2,None,Sprint 3,,Image processing helpers
+17,src/helpers/overviewReportHelper.js,Reporting,Helper,P2-Medium,Tested,Yes,src/helpers/overviewReportHelper.spec.js,0,None,Done,,Already has tests
+18,src/helpers/helperModels/myTeam.js,Team,Helper,P2-Medium,Not Started,No,src/helpers/helperModels/__tests__/myTeam.spec.js,2,None,Sprint 2,,Team helper model
+19,src/helpers/helperModels/myManager.js,Team,Helper,P2-Medium,Not Started,No,src/helpers/helperModels/__tests__/myManager.spec.js,2,None,Sprint 2,,Manager helper model
+20,src/utilities/permissions.js,Permissions,Utility,P1-High,Partial,Yes,src/utilities/permission.spec.js,2,None,Sprint 1,,Expand existing tests
+21,src/utilities/errorHandling.js,Core,Utility,P1-High,Not Started,No,src/utilities/__tests__/errorHandling.spec.js,2,None,Sprint 1,,Error handling utilities
+22,src/utilities/createInitialPermissions.js,Permissions,Utility,P2-Medium,Not Started,No,src/utilities/__tests__/createInitialPermissions.spec.js,2,None,Sprint 2,,Permission initialization
+23,src/utilities/emailSender.js,Communication,Utility,P2-Medium,Not Started,No,src/utilities/__tests__/emailSender.spec.js,3,None,Sprint 2,,Email sending utility
+24,src/utilities/logEmailRecipients.js,Communication,Utility,P3-Low,Not Started,No,src/utilities/__tests__/logEmailRecipients.spec.js,1,None,Sprint 3,,Email logging
+25,src/controllers/userProfileController.js,User Management,Controller,P0-Critical,Not Started,No,src/controllers/__tests__/userProfileController.spec.js,6,userService,Sprint 2,,Core user profile operations
+26,src/controllers/logincontroller.js,User Management,Controller,P0-Critical,Not Started,No,src/controllers/__tests__/logincontroller.spec.js,4,None,Sprint 2,,Authentication logic
+27,src/controllers/registrationController.js,User Management,Controller,P0-Critical,Not Started,No,src/controllers/__tests__/registrationController.spec.js,4,None,Sprint 2,,User registration
+28,src/controllers/forgotPwdcontroller.js,User Management,Controller,P1-High,Not Started,No,src/controllers/__tests__/forgotPwdcontroller.spec.js,3,None,Sprint 2,,Password recovery
+29,src/controllers/forcePwdController.js,User Management,Controller,P2-Medium,Not Started,No,src/controllers/__tests__/forcePwdController.spec.js,2,None,Sprint 3,,Force password change
+30,src/controllers/isEmailExistsController.js,User Management,Controller,P2-Medium,Not Started,No,src/controllers/__tests__/isEmailExistsController.spec.js,2,None,Sprint 3,,Email validation
+31,src/controllers/profileInitialSetupController.js,User Management,Controller,P2-Medium,Not Started,No,src/controllers/__tests__/profileInitialSetupController.spec.js,3,None,Sprint 3,,Initial profile setup
+32,src/controllers/userSkillsProfileController.js,User Management,Controller,P2-Medium,Not Started,No,src/controllers/__tests__/userSkillsProfileController.spec.js,3,None,Sprint 3,,User skills management
+33,src/controllers/userSkillTabsController.js,User Management,Controller,P3-Low,Not Started,No,src/controllers/__tests__/userSkillTabsController.spec.js,2,None,Sprint 4,,Skills tabs UI
+34,src/controllers/permissionController.js,Permissions,Controller,P0-Critical,Not Started,No,src/controllers/__tests__/permissionController.spec.js,5,permissionService,Sprint 2,,Permission management
+35,src/controllers/rolesController.js,Permissions,Controller,P0-Critical,Not Started,No,src/controllers/__tests__/rolesController.spec.js,4,None,Sprint 2,,Role management
+36,src/controllers/rolePresetsController.js,Permissions,Controller,P1-High,Not Started,No,src/controllers/__tests__/rolePresetsController.spec.js,3,None,Sprint 2,,Role presets
+37,src/controllers/permissionChangeLogsController.js,Permissions,Controller,P2-Medium,Not Started,No,src/controllers/__tests__/permissionChangeLogsController.spec.js,2,None,Sprint 3,,Permission audit logs
+38,src/controllers/taskController.js,Tasks,Controller,P0-Critical,Not Started,No,src/controllers/__tests__/taskController.spec.js,6,taskHelper,Sprint 2,,Core task operations
+39,src/controllers/taskNotificationController.js,Tasks,Controller,P1-High,Not Started,No,src/controllers/__tests__/taskNotificationController.spec.js,3,None,Sprint 3,,Task notifications
+40,src/controllers/taskEditSuggestionController.js,Tasks,Controller,P2-Medium,Not Started,No,src/controllers/__tests__/taskEditSuggestionController.spec.js,2,None,Sprint 3,,Task edit suggestions
+41,src/controllers/actionItemController.js,Tasks,Controller,P2-Medium,Not Started,No,src/controllers/__tests__/actionItemController.spec.js,3,None,Sprint 3,,Action items
+42,src/controllers/studentTaskController.js,Tasks,Controller,P2-Medium,Not Started,No,src/controllers/__tests__/studentTaskController.spec.js,3,None,Sprint 3,,Student tasks
+43,src/controllers/educationTaskController.js,Tasks,Controller,P2-Medium,Not Started,No,src/controllers/__tests__/educationTaskController.spec.js,3,None,Sprint 3,,Education tasks
+44,src/controllers/timeEntryController.js,Time Tracking,Controller,P0-Critical,Not Started,No,src/controllers/__tests__/timeEntryController.spec.js,5,None,Sprint 2,,Time entry management
+45,src/controllers/timelogTrackingController.js,Time Tracking,Controller,P1-High,Not Started,No,src/controllers/__tests__/timelogTrackingController.spec.js,3,None,Sprint 3,,Timelog tracking
+46,src/controllers/timeOffRequestController.js,Time Tracking,Controller,P2-Medium,Not Started,No,src/controllers/__tests__/timeOffRequestController.spec.js,3,None,Sprint 3,,Time-off requests
+47,src/controllers/timeZoneAPIController.js,Time Tracking,Controller,P3-Low,Not Started,No,src/controllers/__tests__/timeZoneAPIController.spec.js,2,None,Sprint 4,,Timezone handling
+48,src/controllers/projectController.js,Projects,Controller,P0-Critical,Not Started,No,src/controllers/__tests__/projectController.spec.js,5,None,Sprint 3,,Project management
+49,src/controllers/projectStatusController.js,Projects,Controller,P1-High,Not Started,No,src/controllers/__tests__/projectStatusController.spec.js,3,None,Sprint 3,,Project status
+50,src/controllers/wbsController.js,Projects,Controller,P1-High,Partial,Yes,src/__tests__/integration/wbsRoutes.integration.test.js,2,None,Sprint 3,,Has integration test - add unit tests
+51,src/controllers/lessonPlanController.js,Projects,Controller,P2-Medium,Not Started,No,src/controllers/__tests__/lessonPlanController.spec.js,2,None,Sprint 4,,Lesson plans
+52,src/controllers/teamController.js,Team,Controller,P0-Critical,Not Started,No,src/controllers/__tests__/teamController.spec.js,5,None,Sprint 3,,Team management
+53,src/controllers/dashBoardController.js,Reporting,Controller,P1-High,Not Started,No,src/controllers/__tests__/dashBoardController.spec.js,4,dashboardhelper,Sprint 3,,Dashboard data
+54,src/controllers/reportsController.js,Reporting,Controller,P1-High,Not Started,No,src/controllers/__tests__/reportsController.spec.js,4,reporthelper,Sprint 3,,Reports generation
+55,src/controllers/warningsController.js,Reporting,Controller,P2-Medium,Not Started,No,src/controllers/__tests__/warningsController.spec.js,2,None,Sprint 4,,Warnings management
+56,src/controllers/currentWarningsController.js,Reporting,Controller,P2-Medium,Not Started,No,src/controllers/__tests__/currentWarningsController.spec.js,2,None,Sprint 4,,Current warnings
+57,src/controllers/announcementController.js,Communication,Controller,P2-Medium,Not Started,No,src/controllers/__tests__/announcementController.spec.js,3,None,Sprint 4,,Announcements
+58,src/controllers/notificationController.js,Communication,Controller,P1-High,Not Started,No,src/controllers/__tests__/notificationController.spec.js,3,notificationService,Sprint 3,,Notifications
+59,src/controllers/emailController.js,Communication,Controller,P2-Medium,Not Started,No,src/controllers/__tests__/emailController.spec.js,3,None,Sprint 4,,Email management
+60,src/controllers/followUpController.js,Communication,Controller,P3-Low,Not Started,No,src/controllers/__tests__/followUpController.spec.js,2,None,Sprint 5,,Follow-ups
+61,src/controllers/ownerMessageController.js,Communication,Controller,P3-Low,Not Started,No,src/controllers/__tests__/ownerMessageController.spec.js,2,None,Sprint 5,,Owner messages
+62,src/controllers/jobsController.js,Jobs,Controller,P1-High,Not Started,No,src/controllers/__tests__/jobsController.spec.js,4,None,Sprint 3,,Job management
+63,src/controllers/jobNotificationListControllers.js,Jobs,Controller,P2-Medium,Not Started,No,src/controllers/__tests__/jobNotificationListControllers.spec.js,2,None,Sprint 4,,Job notifications
+64,src/controllers/applicationsController.js,Applications,Controller,P1-High,Not Started,No,src/controllers/__tests__/applicationsController.spec.js,4,applicationsService,Sprint 3,,Application processing
+65,src/controllers/applicantAnalyticsController.js,Applications,Controller,P2-Medium,Not Started,No,src/controllers/__tests__/applicantAnalyticsController.spec.js,2,None,Sprint 4,,Applicant analytics
+66,src/controllers/applicantVolunteerRatioController.js,Applications,Controller,P3-Low,Not Started,No,src/controllers/__tests__/applicantVolunteerRatioController.spec.js,2,None,Sprint 5,,Volunteer ratio
+67,src/controllers/formController.js,Forms,Controller,P2-Medium,Not Started,No,src/controllers/__tests__/formController.spec.js,3,None,Sprint 4,,Form management
+68,src/controllers/hgnFormController.js,Forms,Controller,P2-Medium,Not Started,No,src/controllers/__tests__/hgnFormController.spec.js,3,None,Sprint 4,,HGN forms
+69,src/controllers/hgnFormResponseController.js,Forms,Controller,P2-Medium,Not Started,No,src/controllers/__tests__/hgnFormResponseController.spec.js,3,None,Sprint 4,,Form responses
+70,src/controllers/questionnaireAnalyticsController.js,Forms,Controller,P3-Low,Not Started,No,src/controllers/__tests__/questionnaireAnalyticsController.spec.js,2,None,Sprint 5,,Questionnaire analytics
+71,src/controllers/communityController.js,Community,Controller,P2-Medium,Not Started,No,src/controllers/__tests__/communityController.spec.js,3,None,Sprint 4,,Community management
+72,src/controllers/eventController.js,Community,Controller,P2-Medium,Not Started,No,src/controllers/__tests__/eventController.spec.js,3,None,Sprint 4,,Event management
+73,src/controllers/collaborationController.js,Community,Controller,P3-Low,Not Started,No,src/controllers/__tests__/collaborationController.spec.js,2,None,Sprint 5,,Collaboration
+74,src/controllers/faqController.js,Knowledge Base,Controller,P2-Medium,Not Started,No,src/controllers/__tests__/faqController.spec.js,2,None,Sprint 4,,FAQ management
+75,src/controllers/informationController.js,Knowledge Base,Controller,P2-Medium,Not Started,No,src/controllers/__tests__/informationController.spec.js,2,None,Sprint 4,,Information resources
+76,src/controllers/helpCategoryController.js,Knowledge Base,Controller,P3-Low,Not Started,No,src/controllers/__tests__/helpCategoryController.spec.js,2,None,Sprint 5,,Help categories
+77,src/controllers/mouseoverTextController.js,Knowledge Base,Controller,P3-Low,Not Started,No,src/controllers/__tests__/mouseoverTextController.spec.js,1,None,Sprint 5,,Tooltip text
+78,src/controllers/inventoryController.js,Inventory,Controller,P2-Medium,Not Started,No,src/controllers/__tests__/inventoryController.spec.js,3,None,Sprint 4,,Inventory management
+79,src/controllers/materialLossController.js,Inventory,Controller,P2-Medium,Not Started,No,src/controllers/__tests__/materialLossController.spec.js,2,None,Sprint 4,,Material loss
+80,src/controllers/mostWastedController.js,Inventory,Controller,P3-Low,Not Started,No,src/controllers/__tests__/mostWastedController.spec.js,2,None,Sprint 5,,Waste tracking
+81,src/controllers/materialSusceptibleController.js,Inventory,Controller,P3-Low,Not Started,No,src/controllers/__tests__/materialSusceptibleController.spec.js,2,None,Sprint 5,,Susceptible materials
+82,src/controllers/titleController.js,Organization,Controller,P2-Medium,Not Started,No,src/controllers/__tests__/titleController.spec.js,2,None,Sprint 4,,Title management
+83,src/controllers/tagController.js,Organization,Controller,P3-Low,Not Started,No,src/controllers/__tests__/tagController.spec.js,2,None,Sprint 5,,Tag management
+84,src/controllers/subjectController.js,Organization,Controller,P3-Low,Not Started,No,src/controllers/__tests__/subjectController.spec.js,2,None,Sprint 5,,Subject management
+85,src/controllers/costsController.js,Financial,Controller,P2-Medium,Not Started,No,src/controllers/__tests__/costsController.spec.js,3,None,Sprint 4,,Cost management
+86,src/controllers/laborCostController.js,Financial,Controller,P2-Medium,Not Started,No,src/controllers/__tests__/laborCostController.spec.js,3,None,Sprint 4,,Labor costs
+87,src/controllers/templateController.js,Configuration,Controller,P2-Medium,Not Started,No,src/controllers/__tests__/templateController.spec.js,2,None,Sprint 4,,Template management
+88,src/controllers/badgeController.js,Configuration,Controller,P2-Medium,Tested,Yes,src/controllers/badgeController.spec.js,0,None,Done,,Already has tests
+89,src/controllers/savedFilterController.js,Configuration,Controller,P3-Low,Not Started,No,src/controllers/__tests__/savedFilterController.spec.js,2,None,Sprint 5,,Saved filters
+90,src/controllers/weeklySummariesFilterController.js,Configuration,Controller,P3-Low,Not Started,No,src/controllers/__tests__/weeklySummariesFilterController.spec.js,2,None,Sprint 5,,Weekly summary filters
+91,src/controllers/progressController.js,General,Controller,P2-Medium,Not Started,No,src/controllers/__tests__/progressController.spec.js,2,None,Sprint 4,,Progress tracking
+92,src/controllers/promotionEligibilityController.js,General,Controller,P2-Medium,Not Started,No,src/controllers/__tests__/promotionEligibilityController.spec.js,2,None,Sprint 4,,Promotion eligibility
+93,src/controllers/activityController.js,General,Controller,P3-Low,Not Started,No,src/controllers/__tests__/activityController.spec.js,2,None,Sprint 5,,Activity tracking
+94,src/controllers/mapLocationsController.js,General,Controller,P2-Medium,Partial,Yes,src/__tests__/integration/mapLocationsRoutes.integration.test.js,2,None,Sprint 4,,Has integration test
+95,src/controllers/popupEditorController.js,General,Controller,P3-Low,Not Started,No,src/controllers/__tests__/popupEditorController.spec.js,2,None,Sprint 5,,Popup editor
+96,src/controllers/popupEditorBackupController.js,General,Controller,P3-Low,Partial,Yes,src/__tests__/integration/popupEditorBackupRoutes.integration.test.js,1,None,Sprint 5,,Has integration test
+97,src/controllers/atomController.js,General,Controller,P3-Low,Not Started,No,src/controllers/__tests__/atomController.spec.js,1,None,Sprint 5,,RSS/Atom feed
+98,src/controllers/reasonSchedulingController.js,General,Controller,P3-Low,Not Started,No,src/controllers/__tests__/reasonSchedulingController.spec.js,2,None,Sprint 5,,Scheduling reasons
+99,src/controllers/BlueSquareEmailAssignmentController.js,Email,Controller,P2-Medium,Not Started,No,src/controllers/__tests__/BlueSquareEmailAssignmentController.spec.js,2,None,Sprint 4,,Blue square emails
+100,src/controllers/WeeklySummaryEmailAssignmentController.js,Email,Controller,P2-Medium,Not Started,No,src/controllers/__tests__/WeeklySummaryEmailAssignmentController.spec.js,2,None,Sprint 4,,Weekly summary emails
+101,src/controllers/bmdashboard/bmProjectController.js,BM Dashboard,Controller,P1-High,Not Started,No,src/controllers/bmdashboard/__tests__/bmProjectController.spec.js,4,None,Sprint 5,,BM project management
+102,src/controllers/bmdashboard/bmFinancialController.js,BM Dashboard,Controller,P1-High,Not Started,No,src/controllers/bmdashboard/__tests__/bmFinancialController.spec.js,4,None,Sprint 5,,BM financial tracking
+103,src/controllers/bmdashboard/bmMaterialsController.js,BM Dashboard,Controller,P1-High,Not Started,No,src/controllers/bmdashboard/__tests__/bmMaterialsController.spec.js,4,None,Sprint 5,,BM materials
+104,src/controllers/bmdashboard/bmEquipmentController.js,BM Dashboard,Controller,P1-High,Not Started,No,src/controllers/bmdashboard/__tests__/bmEquipmentController.spec.js,4,None,Sprint 5,,BM equipment
+105,src/controllers/bmdashboard/bmToolController.js,BM Dashboard,Controller,P1-High,Not Started,No,src/controllers/bmdashboard/__tests__/bmToolController.spec.js,4,None,Sprint 5,,BM tools
+106,src/controllers/bmdashboard/bmConsumableController.js,BM Dashboard,Controller,P2-Medium,Not Started,No,src/controllers/bmdashboard/__tests__/bmConsumableController.spec.js,3,None,Sprint 5,,BM consumables
+107,src/controllers/bmdashboard/bmInjuryController.js,BM Dashboard,Controller,P2-Medium,Not Started,No,src/controllers/bmdashboard/__tests__/bmInjuryController.spec.js,3,None,Sprint 5,,BM injury tracking
+108,src/controllers/bmdashboard/bmTimeLoggerController.js,BM Dashboard,Controller,P2-Medium,Not Started,No,src/controllers/bmdashboard/__tests__/bmTimeLoggerController.spec.js,3,None,Sprint 5,,BM time logging
+109,src/controllers/bmdashboard/projectCostController.js,BM Dashboard,Controller,P2-Medium,Not Started,No,src/controllers/bmdashboard/__tests__/projectCostController.spec.js,3,None,Sprint 6,,BM project costs
+110,src/controllers/bmdashboard/projectCostTrackingController.js,BM Dashboard,Controller,P2-Medium,Not Started,No,src/controllers/bmdashboard/__tests__/projectCostTrackingController.spec.js,3,None,Sprint 6,,BM cost tracking
+111,src/controllers/bmdashboard/bmActualVsPlannedCostController.js,BM Dashboard,Controller,P2-Medium,Not Started,No,src/controllers/bmdashboard/__tests__/bmActualVsPlannedCostController.spec.js,3,None,Sprint 6,,BM cost analysis
+112,src/controllers/bmdashboard/toolUtilizationController.js,BM Dashboard,Controller,P2-Medium,Not Started,No,src/controllers/bmdashboard/__tests__/toolUtilizationController.spec.js,3,None,Sprint 6,,Tool utilization
+113,src/controllers/bmdashboard/bmRentalChartController.js,BM Dashboard,Controller,P2-Medium,Not Started,No,src/controllers/bmdashboard/__tests__/bmRentalChartController.spec.js,2,None,Sprint 6,,Rental charts
+114,src/controllers/bmdashboard/bmLoginController.js,BM Dashboard,Controller,P2-Medium,Tested,Yes,src/controllers/bmdashboard/__tests__/bmLoginController.spec.js,0,None,Done,,Already has tests
+115,src/controllers/bmdashboard/bmInventoryTypeController.js,BM Dashboard,Controller,P2-Medium,Not Started,No,src/controllers/bmdashboard/__tests__/bmInventoryTypeController.spec.js,2,None,Sprint 6,,Inventory types
+116,src/controllers/bmdashboard/bmIssueController.js,BM Dashboard,Controller,P2-Medium,Not Started,No,src/controllers/bmdashboard/__tests__/bmIssueController.spec.js,3,None,Sprint 6,,BM issues
+117,src/controllers/bmdashboard/bmNewLessonController.js,BM Dashboard,Controller,P3-Low,Not Started,No,src/controllers/bmdashboard/__tests__/bmNewLessonController.spec.js,2,None,Sprint 6,,BM lessons
+118,src/controllers/bmdashboard/bmReusableController.js,BM Dashboard,Controller,P3-Low,Not Started,No,src/controllers/bmdashboard/__tests__/bmReusableController.spec.js,2,None,Sprint 6,,Reusable items
+119,src/controllers/bmdashboard/bmDashboardPrototypeController.js,BM Dashboard,Controller,P3-Low,Not Started,No,src/controllers/bmdashboard/__tests__/bmDashboardPrototypeController.spec.js,2,None,Sprint 6,,Dashboard prototype
+120,src/controllers/bmdashboard/bmPaidLaborCostController.js,BM Dashboard,Controller,P2-Medium,Not Started,No,src/controllers/bmdashboard/__tests__/bmPaidLaborCostController.spec.js,3,None,Sprint 6,,Paid labor costs
+121,src/controllers/bmdashboard/bmExternalTeamController.js,BM Dashboard,Controller,P3-Low,Not Started,No,src/controllers/bmdashboard/__tests__/bmExternalTeamController.spec.js,2,None,Sprint 7,,External teams
+122,src/controllers/bmdashboard/bmToolAvailabilityController.js,BM Dashboard,Controller,P2-Medium,Not Started,No,src/controllers/bmdashboard/__tests__/bmToolAvailabilityController.spec.js,2,None,Sprint 6,,Tool availability
+123,src/controllers/bmdashboard/bmToolsReturnedLateController.js,BM Dashboard,Controller,P3-Low,Not Started,No,src/controllers/bmdashboard/__tests__/bmToolsReturnedLateController.spec.js,2,None,Sprint 7,,Late returns
+124,src/controllers/bmdashboard/bmToolsDowntimeController.js,BM Dashboard,Controller,P3-Low,Not Started,No,src/controllers/bmdashboard/__tests__/bmToolsDowntimeController.spec.js,2,None,Sprint 7,,Tool downtime
+125,src/controllers/bmdashboard/projectRiskProfileController.js,BM Dashboard,Controller,P2-Medium,Not Started,No,src/controllers/bmdashboard/__tests__/projectRiskProfileController.spec.js,2,None,Sprint 6,,Risk profiles
+126,src/controllers/bmdashboard/toolAvailabilityController.js,BM Dashboard,Controller,P2-Medium,Not Started,No,src/controllers/bmdashboard/__tests__/toolAvailabilityController.spec.js,2,None,Sprint 6,,Tool availability 2
+127,src/controllers/bmdashboard/injuryCategoryController.js,BM Dashboard,Controller,P3-Low,Not Started,No,src/controllers/bmdashboard/__tests__/injuryCategoryController.spec.js,2,None,Sprint 7,,Injury categories
+128,src/controllers/bmdashboard/IssuesController.js,BM Dashboard,Controller,P2-Medium,Not Started,No,src/controllers/bmdashboard/__tests__/IssuesController.spec.js,3,None,Sprint 6,,Issues management
+129,src/controllers/bmdashboard/expenditureController.js,BM Dashboard,Controller,P2-Medium,Not Started,No,src/controllers/bmdashboard/__tests__/expenditureController.spec.js,3,None,Sprint 6,,Expenditure tracking
+130,src/controllers/lbdashboard/listingsController.js,LB Dashboard,Controller,P1-High,Not Started,No,src/controllers/lbdashboard/__tests__/listingsController.spec.js,4,None,Sprint 7,,LB listings
+131,src/controllers/lbdashboard/bidsController.js,LB Dashboard,Controller,P1-High,Not Started,No,src/controllers/lbdashboard/__tests__/bidsController.spec.js,4,None,Sprint 7,,LB bids
+132,src/controllers/lbdashboard/paymentsController.js,LB Dashboard,Controller,P1-High,Not Started,No,src/controllers/lbdashboard/__tests__/paymentsController.spec.js,4,None,Sprint 7,,LB payments
+133,src/controllers/lbdashboard/biddingController.js,LB Dashboard,Controller,P2-Medium,Not Started,No,src/controllers/lbdashboard/__tests__/biddingController.spec.js,3,None,Sprint 7,,LB bidding
+134,src/controllers/lbdashboard/bidDeadlinesController.js,LB Dashboard,Controller,P2-Medium,Not Started,No,src/controllers/lbdashboard/__tests__/bidDeadlinesController.spec.js,2,None,Sprint 7,,Bid deadlines
+135,src/controllers/lbdashboard/bidNotificationsController.js,LB Dashboard,Controller,P2-Medium,Not Started,No,src/controllers/lbdashboard/__tests__/bidNotificationsController.spec.js,2,None,Sprint 7,,Bid notifications
+136,src/controllers/lbdashboard/bidPropertyController.js,LB Dashboard,Controller,P3-Low,Not Started,No,src/controllers/lbdashboard/__tests__/bidPropertyController.spec.js,2,None,Sprint 8,,Bid properties
+137,src/controllers/lbdashboard/bidTermsController.js,LB Dashboard,Controller,P3-Low,Not Started,No,src/controllers/lbdashboard/__tests__/bidTermsController.spec.js,2,None,Sprint 8,,Bid terms
+138,src/controllers/lbdashboard/lbmessageController.js,LB Dashboard,Controller,P2-Medium,Not Started,No,src/controllers/lbdashboard/__tests__/lbmessageController.spec.js,2,None,Sprint 7,,LB messages
+139,src/controllers/lbdashboard/lbuserPrefController.js,LB Dashboard,Controller,P3-Low,Not Started,No,src/controllers/lbdashboard/__tests__/lbuserPrefController.spec.js,2,None,Sprint 8,,User preferences
+140,src/controllers/lbdashboard/listingAvailablityController.js,LB Dashboard,Controller,P2-Medium,Not Started,No,src/controllers/lbdashboard/__tests__/listingAvailablityController.spec.js,2,None,Sprint 7,,Listing availability
+141,src/controllers/lbdashboard/smsController.js,LB Dashboard,Controller,P2-Medium,Not Started,No,src/controllers/lbdashboard/__tests__/smsController.spec.js,2,None,Sprint 7,,SMS management
+142,src/controllers/lbdashboard/userBidNotificationController.js,LB Dashboard,Controller,P3-Low,Not Started,No,src/controllers/lbdashboard/__tests__/userBidNotificationController.spec.js,2,None,Sprint 8,,User bid notifications
+143,src/controllers/lbdashboard/villages.js,LB Dashboard,Controller,P3-Low,Not Started,No,src/controllers/lbdashboard/__tests__/villages.spec.js,1,None,Sprint 8,,Villages
+144,src/controllers/lbdashboard/webhookController.js,LB Dashboard,Controller,P2-Medium,Not Started,No,src/controllers/lbdashboard/__tests__/webhookController.spec.js,2,None,Sprint 7,,Webhooks
+145,src/controllers/lbdashboard/wishlistsController.js,LB Dashboard,Controller,P3-Low,Not Started,No,src/controllers/lbdashboard/__tests__/wishlistsController.spec.js,2,None,Sprint 8,,Wishlists
+146,src/controllers/automation/appAccessController.js,Automation,Controller,P2-Medium,Not Started,No,src/controllers/automation/__tests__/appAccessController.spec.js,2,appAccessService,Sprint 4,,App access
+147,src/controllers/automation/dropboxController.js,Automation,Controller,P2-Medium,Not Started,No,src/controllers/automation/__tests__/dropboxController.spec.js,2,dropboxService,Sprint 4,,Dropbox integration
+148,src/controllers/automation/githubController.js,Automation,Controller,P2-Medium,Not Started,No,src/controllers/automation/__tests__/githubController.spec.js,2,githubService,Sprint 4,,GitHub integration
+149,src/controllers/automation/sentryController.js,Automation,Controller,P2-Medium,Not Started,No,src/controllers/automation/__tests__/sentryController.spec.js,2,sentryService,Sprint 4,,Sentry integration
+150,src/controllers/automation/slackController.js,Automation,Controller,P2-Medium,Not Started,No,src/controllers/automation/__tests__/slackController.spec.js,2,slackService,Sprint 4,,Slack integration
+151,src/controllers/CommunityPortal/NoshowVizController.js,Community Portal,Controller,P3-Low,Not Started,No,src/controllers/CommunityPortal/__tests__/NoshowVizController.spec.js,2,None,Sprint 5,,No-show visualization
+152,src/controllers/CommunityPortal/eventFeedbackController.js,Community Portal,Controller,P3-Low,Not Started,No,src/controllers/CommunityPortal/__tests__/eventFeedbackController.spec.js,2,None,Sprint 5,,Event feedback
+153,src/controllers/jobAnalytics/hoursPledgedController.js,Analytics,Controller,P2-Medium,Not Started,No,src/controllers/jobAnalytics/__tests__/hoursPledgedController.spec.js,2,None,Sprint 4,,Hours pledged analytics
+154,src/controllers/prAnalytics/prInsightsController.js,Analytics,Controller,P2-Medium,Not Started,No,src/controllers/prAnalytics/__tests__/prInsightsController.spec.js,2,None,Sprint 4,,PR insights
+155,src/controllers/summaryDashboard/supplierPerformance.js,Analytics,Controller,P2-Medium,Not Started,No,src/controllers/summaryDashboard/__tests__/supplierPerformance.spec.js,2,None,Sprint 4,,Supplier performance
+156,src/routes/userProfileRouter.js,User Management,Route,P1-High,Not Started,No,src/routes/__tests__/userProfileRouter.test.js,3,userProfileController,Sprint 3,,User profile routes
+157,src/routes/loginRouter.js,User Management,Route,P1-High,Not Started,No,src/routes/__tests__/loginRouter.test.js,3,logincontroller,Sprint 3,,Login routes
+158,src/routes/taskRouter.js,Tasks,Route,P1-High,Not Started,No,src/routes/__tests__/taskRouter.test.js,3,taskController,Sprint 3,,Task routes
+159,src/routes/projectRouter.js,Projects,Route,P1-High,Not Started,No,src/routes/__tests__/projectRouter.test.js,3,projectController,Sprint 3,,Project routes
+160,src/routes/teamRouter.js,Team,Route,P1-High,Not Started,No,src/routes/__tests__/teamRouter.test.js,3,teamController,Sprint 3,,Team routes
+161,src/routes/timeentryRouter.js,Time Tracking,Route,P1-High,Not Started,No,src/routes/__tests__/timeentryRouter.test.js,3,timeEntryController,Sprint 3,,Time entry routes
+162,src/routes/permissionRouter.js,Permissions,Route,P1-High,Not Started,No,src/routes/__tests__/permissionRouter.test.js,3,permissionController,Sprint 3,,Permission routes
+163,src/routes/wbsRouter.js,Projects,Route,P2-Medium,Tested,Yes,src/__tests__/integration/wbsRoutes.integration.test.js,0,None,Done,,Already has integration test
+164,src/routes/rolePresetRouter.js,Permissions,Route,P2-Medium,Tested,Yes,src/__tests__/integration/rolePresetRoutes.integration.test.js,0,None,Done,,Already has integration test
+165,src/websockets/index.js,WebSockets,WebSocket,P2-Medium,Not Started,No,src/websockets/__tests__/index.spec.js,4,None,Sprint 5,,WebSocket main entry
+166,src/websockets/notificationHandler.js,WebSockets,WebSocket,P2-Medium,Not Started,No,src/websockets/__tests__/notificationHandler.spec.js,3,None,Sprint 5,,Notification WS handler
+167,src/websockets/timerHandler.js,WebSockets,WebSocket,P2-Medium,Not Started,No,src/websockets/__tests__/timerHandler.spec.js,3,None,Sprint 5,,Timer WS handler
+168,src/cronjobs/userProfileJobs.js,CronJobs,CronJob,P2-Medium,Not Started,No,src/cronjobs/__tests__/userProfileJobs.spec.js,3,None,Sprint 5,,User profile cron
+169,src/cronjobs/notificationJobs.js,CronJobs,CronJob,P2-Medium,Not Started,No,src/cronjobs/__tests__/notificationJobs.spec.js,3,None,Sprint 5,,Notification cron
+170,src/jobs/batchProcessor.js,Jobs,Job,P2-Medium,Not Started,No,src/jobs/__tests__/batchProcessor.spec.js,3,None,Sprint 5,,Batch processing job
